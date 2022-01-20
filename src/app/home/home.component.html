@@ -1,0 +1,28 @@
+<ng-hot-keys [disabled]="directiveDisabled" [shortcuts]="shortcuts"></ng-hot-keys>
+<div class="wrapper">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Demo page for Keyboard shortcut service</mat-card-title>
+      <mat-card-subtitle>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Only on focus" #input>
+      </mat-form-field>
+      <input [ngHotKeys]="directiveShortcuts" [disabled]="directiveDisabled"/>
+      <button (click)="handleClick($event)">disable directive</button>
+      <button (click)="toggleSecondShortcuts()">Toggle Second shortcuts</button>
+      <button (click)="justForFun()">Just for Fun to make sure clicks works</button>
+      <div *ngIf="showSecondShortcuts">
+        <ng-hot-keys [shortcuts]="secondShortcuts"></ng-hot-keys>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="testClick($event)">Testing clicking bug</button>
+    </mat-card-actions>
+    <textarea></textarea>
+  </mat-card>
+</div>
+
+

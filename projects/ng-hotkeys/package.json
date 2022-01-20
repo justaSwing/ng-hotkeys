@@ -1,0 +1,28 @@
+{
+  "name": "ng-hotkeys",
+  "version": "13.1.2",
+  "description": "ng-hotkeys for Angular 13+",
+  "keywords": [
+    "angular",
+    "keyboard",
+    "shortcuts",
+    "ng",
+    "keyboard-shortcuts",
+    "rxjs"
+  ],
+  "license": "MIT",
+  "author": "Justyna Bajer <justab84@gmail.com> (https://github.com/justaSwing)",
+  "homepage": "https://github.com/justaSwing/ng-hotkeys",
+  "repository": "github.com/justaSwing/ng-hotkeys",
+  "bugs": "https://github.com/justaSwing/ng-hotkeys/issues",
+  "peerDependencies": {
+    "@angular/core": "^13.0.0",
+    "@angular/common": "^13.0.0",
+    "rxjs": "^7.0.0",
+    "zone.js": "^0.11.4",
+    "core-js": "^3.20.0"
+  },
+  "dependencies": {
+    "tslib": "^6.1.0"
+  }
+}
