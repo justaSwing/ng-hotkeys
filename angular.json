@@ -171,7 +171,6 @@
       }
     }
   },
-  "defaultProject": "ng-hotkeys-app",
   "cli": {
     "analytics": false
   }

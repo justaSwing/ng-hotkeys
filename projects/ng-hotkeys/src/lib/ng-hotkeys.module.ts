@@ -10,7 +10,6 @@ import { CommonModule } from "@angular/common";
 
 @NgModule({
     imports: [CommonModule],
-    entryComponents: [NgHotkeysHelpComponent],
     declarations: [
         NgHotkeysComponent,
         NgHotkeysDirective,
