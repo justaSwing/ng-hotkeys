@@ -1,7 +1,7 @@
 {
   "name": "ng-hotkeys-app",
-  "version": "13.1.2",
-  "description": "ng-hotkeys for Angular 13+",
+  "version": "14.2.8",
+  "description": "ng-hotkeys for Angular 14+",
   "keywords": [
     "angular",
     "keyboard",

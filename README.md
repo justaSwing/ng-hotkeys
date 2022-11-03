@@ -22,7 +22,7 @@ An Angular module that provides a declarative API using components/directive to 
 See demo here:  
 [demo](https://codesandbox.io/s/yvyovny43v)  
 
-Compatible with Angular 13+  
+Compatible with Angular 14+  
   
   
 * [Install](#install)  
