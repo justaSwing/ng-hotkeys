@@ -22,7 +22,7 @@ An Angular module that provides a declarative API using components/directive to 
 See demo here:  
 [demo](https://codesandbox.io/s/yvyovny43v)  
 
-Compatible with Angular 13+  
+Compatible with Angular 14+  
   
   
 * [Install](#install)  
@@ -35,10 +35,10 @@ Compatible with Angular 13+
         * [Keyboardshortcuts](#ng-hotkeys)  
         * [HelpScreen](#ng-hotkeys-help)  
     * [Directive](#directive)  
-        * [ngKeyboardShortcuts](#ngKeyboardShortcuts)  
+        * [NgHotkeysDirective](#NgHotkeysDirective)  
     * [Service](#service)  
-        * [KeyboardShortcutsHelpService](#KeyboardShortcutsHelpService)
-        * [KeyboardShortcutsSelectService](#KeyboardShortcutsSelectService)  
+        * [NgHotkeysHelpService](#NgHotkeysHelpService)
+        * [NgHotkeysSelectService](#NgHotkeysSelectService)  
 * [API](#api)  
     * [Types](#types)  
         * [AllowIn](#AllowIn)  
@@ -56,14 +56,9 @@ Compatible with Angular 13+
 ```npm install --save ng-hotkeys```
 
 
-##### Yarn  
-
+##### Yarn
 ###### Angular latest
 ```yarn add ng-hotkeys```
-###### Angular 8/9
-```npm add ng-hotkeys@^9.0.0```  
-###### Angular 7
-```yarn add ng-hotkeys@^7.0.0```
 
 # Setup:  
 ```typescript  
@@ -226,7 +221,7 @@ export class DemoComponent implements AfterViewInit {
         this.keyboard.select("cmd + f").subscribe(e => console.log(e));  
     }  
   
-    @ViewChild(KeyboardShortcutsComponent) private keyboard: KeyboardShortcutsComponent;  
+    @ViewChild(NgHotkeysComponent) private keyboard: NgHotkeysComponent;  
   
 }  
 ```  
@@ -254,10 +249,10 @@ Should be placed in the root of your app, preferably in app.component.html
  #### Methods:  
 | Name  | Input | Return  | Description |  
 |----------|:------|:------:|:-------------:|  
-| hide | void| ```KeyboardShortcutsHelpComponent``` | Programmatically hide the modal |   
-| reveal | void| ```KeyboardShortcutsHelpComponent``` | Programmatically hide the modal |
+| hide | void| ```NgHotkeysHelpComponent``` | Programmatically hide the modal |   
+| reveal | void| ```NgHotkeysHelpComponent``` | Programmatically hide the modal |
 | visible | void| ```boolean``` | Check whether the modal is visible or not. |
-| toggle | void| ```KeyboardShortcutsHelpComponent``` | Programmatically toggle the modal visibility |
+| toggle | void| ```NgHotkeysHelpComponent``` | Programmatically toggle the modal visibility |
 
 #### Methods:  
 | Name  | Input | Return  | Description |  
@@ -290,7 +285,7 @@ export class AppComponent {
 ```  
   
 ## Directive  
-### ngKeyboardShortcuts 
+### NgHotkeysDirective 
 Directive can only be used for focusable elements, such as textarea, select, input, etc...  
 ##### Important: 
 The shortcut then will only be active while the element is in __focus__.
@@ -330,7 +325,7 @@ export class DemoComponent implements AfterViewInit {
         this.keyboard.select("cmd + f").subscribe(e => console.log(e));  
     }  
   
-    @ViewChild(KeyboardShortcutsComponent) private keyboard: KeyboardShortcutsComponent;  
+    @ViewChild(NgHotkeysComponent) private keyboard: NgHotkeysComponent;  
   
 }  
 ```  

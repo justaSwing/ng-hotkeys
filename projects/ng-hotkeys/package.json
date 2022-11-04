@@ -1,7 +1,7 @@
 {
   "name": "ng-hotkeys",
-  "version": "13.1.2",
-  "description": "ng-hotkeys for Angular 13+",
+  "version": "14.2.8",
+  "description": "ng-hotkeys for Angular 14+",
   "keywords": [
     "angular",
     "keyboard",
@@ -16,13 +16,13 @@
   "repository": "github.com/justaSwing/ng-hotkeys",
   "bugs": "https://github.com/justaSwing/ng-hotkeys/issues",
   "peerDependencies": {
-    "@angular/core": "^13.0.0",
-    "@angular/common": "^13.0.0",
-    "rxjs": "^7.0.0",
+    "@angular/core": "^14.2.8",
+    "@angular/common": "^14.2.8",
+    "rxjs": "^7.5.2",
     "zone.js": "^0.11.4",
-    "core-js": "^3.20.0"
+    "core-js": "^3.20.3"
   },
   "dependencies": {
-    "tslib": "^6.1.0"
+    "tslib": "^6.1.3"
   }
 }
